@@ -5,6 +5,9 @@ bodyParser = require('body-parser'),
 cors = require('cors')
 var history = require('connect-history-api-fallback');
 
+//Authentication Packages
+var session = require('express-session');
+
 require('dotenv').config();
 
 
@@ -21,7 +24,15 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors());
 app.use(history());
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  // cookie: { secure: true }
+}));
 // app.use(logger(dev))
+
+
 
 // routes
 
