@@ -1,15 +1,5 @@
 <template>
 <div>
-     <!-- <div  class="row p-4">
-      <div class="col-md-12">
-        <h1 class="d-inline"></h1>
-        <router-link :to="{ name: 'InstitucionesHome' }" class="btn btn-primary float-right mt-2">
-          Instituciones
-        </router-link>
-      </div>
-    </div><br /> -->
-
-
     <div class="container">
         <div class="row">
             <div class="col align-self-center">
@@ -24,7 +14,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Ingrese su Contraseña" required>
                     </div>
                     <p style="text-align: center">
-                        <b-button type="submit" variant="primary">Submit</b-button>                       
+                        <b-button type="submit" variant="primary" >Submit</b-button>                       
                         <!-- <v-ons-button modifier="large" style="margin: 6px 0" type="submit">
                             <router-link :to="{ name: 'InstitucionesHome' }" class="btn btn-primary">
                                 Instituciones
@@ -52,8 +42,7 @@ export default {
         logIn(){
             let uri = 'http://localhost:4000/logIng';
                 this.axios.post(uri).then((response) => {
-                    this.items = response.data;
-                    debugger;
+        
                 });
         }
 
