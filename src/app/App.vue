@@ -1,4 +1,5 @@
 <template>
+<v-ons-page>
   <div style="width: 100%">
   <div style="width: 100%">
     <b-navbar type="dark" variant="primary" toggleable>
@@ -31,6 +32,7 @@
           </transition>
     </div>
   </div>
+</v-ons-page>
 </template>
 
 <style>

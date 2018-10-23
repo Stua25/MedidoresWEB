@@ -1,9 +1,14 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-import BootstrapVue from 'bootstrap-vue'
 
+import BootstrapVue from 'bootstrap-vue';
 Vue.use(BootstrapVue);
+
+import VueRouter from 'vue-router';
 Vue.use(VueRouter);
+
+
+import VueOnsen from 'vue-onsenui';
+Vue.use(VueOnsen);
 
 
 import VueAxios from 'vue-axios';
@@ -12,6 +17,9 @@ Vue.use(VueAxios, axios);
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+import 'onsenui/css/onsenui-core.css'
+import 'onsenui/css/onsen-css-components.css'
 
 import App from './App.vue';
 
